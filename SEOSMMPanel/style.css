@@ -1,0 +1,187 @@
+body{
+	background-image: url("./pic/background.jpg");
+	background-size: cover;
+	margin: 0;
+	background-attachment:  fixed;
+	
+}
+img{
+	height: 300px;
+	width: 300px;
+}
+p,a{
+	color: white;
+	font-size: 16px;
+}
+h1,h3,h2{
+	color:white;
+	font-family: courier;
+}
+span{
+	color:#D63E1E;
+	font-size: 18px;
+	font-family: courier;
+}
+input{
+	height: 20px;
+	margin:15px,15px;
+	padding: 15px,15px;
+	border-radius: 8px;
+	background-color: transparent; 
+	color:orange;	
+}
+input:hover{
+	box-shadow: 1px 1px 3px blue;
+}
+
+.imgan{
+	padding: 10px;
+	float: left;
+	animation-name: img;
+	animation-direction: 2s;
+	animation-delay: .5s;
+	-webkit-animation-name: img;
+	-webkit-animation-direction: 3s;
+	-webkit-animation-delay: .5s;
+	transition: all 1.5s;
+
+}
+@keyframes img{
+	from{left:0px}
+	to{left: 20px}
+}
+@-webkit-keyframes img{
+	from{left:0px;}
+	to{left: 20px;}
+}
+.imgan:hover{
+	width: 150%;
+	height:150%;
+	box-shadow: 3px 3px px black;
+}
+.menu {
+	margin: 0;
+	list-style-type: none;
+	position:fixed;
+	top:0;
+	background: rgba(0, 0, 0, 1);
+	width: 100%;
+	list-style: none;
+
+
+}
+
+
+.menu li{
+
+	float: left;
+	position: relative;
+	
+}
+
+.menu li a {
+
+	color: white;
+	margin:5px;
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	font-size: 1.3em;
+	
+}
+.menu li a:hover{
+	background-color: orange;
+}
+
+.menu li ul{
+	list-style: none;
+	position: absolute;
+	left:-99999px;
+	padding:0;
+	background: rgba(0, 0, 0, 1);
+}
+
+.menu li:hover ul{
+
+	left: 0px;
+
+}
+.menu li ul li{
+
+	float: none;
+	width: 130px;
+}
+
+.font-color{
+/* its for H1 font color */
+	color:#65D600;
+	margin-top: 70px;
+	margin-left: 46%;
+}
+
+.size{
+
+	font-size: 22px;
+	color: white;
+	margin-left: 43%;
+	-webkit-transition:all 1s; 
+}
+.size:hover{
+	color: yellow;
+	font-size: 30px;
+
+}
+
+#mypic{
+	display: inline;
+	width:40%; 
+ 	height: 12%;
+	margin-left: 5%;
+	box-shadow: 2px 2px 6px black;
+	-webkit-transition: all 1s;
+}
+#mypic:hover{
+	height: 15%;
+	width: 55%;
+	overflow: hidden;
+}
+
+
+td{
+	width: 50%;
+}
+.zoom{
+	width: 90%;
+	color: white;
+	font-size: 18px;
+	padding-left: 5%;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.zoom:hover{
+ 	padding-left: 10px;
+	font-size: 22px;
+	box-shadow: 2px 2px 6px black;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.edu-div{
+	
+	display: inline;
+	color: blue;
+
+}
+.login{
+	height: 300px;
+	width: 500px;
+	margin: 10% 30%;
+	background-color: rgb(0,0,0,.7);
+
+}
+.login form{
+	margin:20% 20%;
+}
